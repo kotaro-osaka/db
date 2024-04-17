@@ -1,2 +1,2 @@
-# db
-Datenbanken Projekte
+# DB
+> Datenbanken Projekte
