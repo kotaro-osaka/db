@@ -1,2 +1,2 @@
 # DB
-> Datenbanken Projekte
+> Projekte aus dem Datenbanken-Unterricht
