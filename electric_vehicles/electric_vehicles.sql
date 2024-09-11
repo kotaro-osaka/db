@@ -83,10 +83,10 @@ CREATE TABLE IF NOT EXISTS vehicle_battery (
 	vehicleID INT NOT NULL,
 	batteryID INT NOT NULL,
 	PRIMARY KEY (vehicleID, batteryID),
-	CONSTRAINT fk_vehicleID FOREIGN KEY (vehicleID) REFERENCES vehicle(vehicleID)
+	CONSTRAINT fk_vehicleID_vb FOREIGN KEY (vehicleID) REFERENCES vehicle(vehicleID)
 		ON DELETE NO ACTION
 		ON UPDATE CASCADE,
-	CONSTRAINT fk_batteryID FOREIGN KEY (batteryID) REFERENCES battery(batteryID)
+	CONSTRAINT fk_batteryID_vb FOREIGN KEY (batteryID) REFERENCES battery(batteryID)
 		ON DELETE NO ACTION
 		ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -101,7 +101,7 @@ CREATE TABLE IF NOT EXISTS vehicle_country (
 	vehicleID INT NOT NULL,
 	countryID INT NOT NULL,
 	PRIMARY KEY (vehicleID, countryID),
-	CONSTRAINT fk_vehicleID FOREIGN KEY (vehicleID) REFERENCES vehicle(vehicleID)
+	CONSTRAINT fk_vehicleID_vc FOREIGN KEY (vehicleID) REFERENCES vehicle(vehicleID)
 		ON DELETE NO ACTION
 		ON UPDATE CASCADE,
 	CONSTRAINT fk_countryID FOREIGN KEY (countryID) REFERENCES country(countryID)
