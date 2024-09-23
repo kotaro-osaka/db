@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS chargingStation (
 
 CREATE TABLE IF NOT EXISTS vehicle (
 	vehicleID INT NOT NULL AUTO_INCREMENT,
-	modell VARCHAR(255),
+	model VARCHAR(255),
 	chargingRate DOUBLE,
 	totalRange VARCHAR(255),
 	batteryRange VARCHAR(255),
